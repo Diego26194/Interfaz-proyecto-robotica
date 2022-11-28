@@ -216,17 +216,25 @@ namespace Pruebaarduino1
             {
                 if (position2 >= 0 && position3 > position2 - 1)
                 {
-                    textBoxG2.Text = datoarduino.Substring(position2 + 1, position3- position2-1);
-                    Pot2.Invoke((MethodInvoker)(() =>
+
+                    try
                     {
-                        int eje2= Convert.ToInt32(datoarduino.Substring(position2 + 1, position3 - position2 - 1));
-                        Pot2.Value = 360 - eje2;
-                        //Pot2.Text = textBoxG2.Text; //Me devuelve el valor obtenido del arduino
-                        Pot2.Text = Convert.ToString(eje2 - 109);
+                        textBoxG2.Text = datoarduino.Substring(position2 + 1, position3 - position2 - 1);
+                        Pot2.Invoke((MethodInvoker)(() =>
+                        {
+                            int eje2 = Convert.ToInt32(datoarduino.Substring(position2 + 1, position3 - position2 - 1));
+                            Pot2.Value = 360 - eje2;
+                            //Pot2.Text = textBoxG2.Text; //Me devuelve el valor obtenido del arduino
+                            Pot2.Text = Convert.ToString(eje2 - 109);
 
 
 
-                    }));
+                        }));
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show(error.Message);
+                    }
                 }
                  
             }));
@@ -234,19 +242,26 @@ namespace Pruebaarduino1
                 {
                     if (position4 >= 0 && position3 > position3 - 1)
                     {
-                        int eje3 = Convert.ToInt32(datoarduino.Substring(position3 + 1, position4 - position3 - 1));
-                        textBoxG3.Text = Convert.ToString(eje3);
-                        Pot3.Invoke((MethodInvoker)(() =>
+                        try
                         {
-                            
-                            Pot3.Value = 360 - eje3;
-                            //Pot3.Text = textBoxG3.Text; //Me devuelve el valor obtenido del arduino
-                            Pot3.Text = Convert.ToString(eje3 - 80);
+                            int eje3 = Convert.ToInt32(datoarduino.Substring(position3 + 1, position4 - position3 - 1));
+                            textBoxG3.Text = Convert.ToString(eje3);
+                            Pot3.Invoke((MethodInvoker)(() =>
+                            {
+
+                                Pot3.Value = 360 - eje3;
+                                //Pot3.Text = textBoxG3.Text; //Me devuelve el valor obtenido del arduino
+                                Pot3.Text = Convert.ToString(eje3 - 80);
 
 
 
 
-                        }));
+                            }));
+                        }
+                        catch (Exception error)
+                        {
+                            MessageBox.Show(error.Message);
+                        }
                     }
 
                 })); 
@@ -254,7 +269,14 @@ namespace Pruebaarduino1
                 {
                     if (position4 >= 0 && position5 > position4 - 1)
                     {
-                        textBoxX.Text = datoarduino.Substring(position4 + 1, position5 - position4 - 1);
+                        try
+                        {
+                            textBoxX.Text = datoarduino.Substring(position4 + 1, position5 - position4 - 1);
+                        }
+                        catch (Exception error)
+                        {
+                            MessageBox.Show(error.Message);
+                        }
                     }
 
                 }));
@@ -262,7 +284,15 @@ namespace Pruebaarduino1
                 {
                     if (position5 >= 0 && position6 > position5 - 1)
                     {
-                        textBoxY.Text = datoarduino.Substring(position5 + 1, position6 - position5 - 1);
+                        try
+                        {
+                            textBoxY.Text = datoarduino.Substring(position5 + 1, position6 - position5 - 1);
+                        }
+                        catch (Exception error)
+                        {
+                            MessageBox.Show(error.Message);
+                        }
+                        
                     }
 
                 }));
@@ -270,7 +300,14 @@ namespace Pruebaarduino1
                 {
                     if (position6 >= 0 )
                     {
-                       textBoxZ.Text = datoarduino.Substring(position6+1);
+                        try
+                        {
+                            textBoxZ.Text = datoarduino.Substring(position6 + 1);
+                        }
+                        catch (Exception error)
+                        {
+                            MessageBox.Show(error.Message);
+                        }
                     }
 
                 })); 
