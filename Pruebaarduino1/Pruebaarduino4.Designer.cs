@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series28 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series29 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series30 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series31 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series32 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.progressBarConeccion = new System.Windows.Forms.ProgressBar();
             this.butConectar = new System.Windows.Forms.Button();
@@ -72,17 +72,16 @@
             this.labelEjeY = new System.Windows.Forms.Label();
             this.labelEjeZ = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBoxPuerto = new System.Windows.Forms.TextBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.textBoxIP = new System.Windows.Forms.TextBox();
-            this.textBoxPuerto = new System.Windows.Forms.TextBox();
+            this.comboIP = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -297,7 +296,7 @@
             this.Pot3.SuperscriptColor = System.Drawing.Color.Black;
             this.Pot3.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
             this.Pot3.SuperscriptText = "";
-            this.Pot3.TabIndex = 19;
+            this.Pot3.TabIndex = 17;
             this.Pot3.Text = "0";
             this.Pot3.TextMargin = new System.Windows.Forms.Padding(4, 3, 0, 0);
             this.Pot3.UseWaitCursor = true;
@@ -476,13 +475,12 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.groupBox4.Controls.Add(this.comboIP);
             this.groupBox4.Controls.Add(this.textBoxPuerto);
-            this.groupBox4.Controls.Add(this.textBoxIP);
             this.groupBox4.Controls.Add(this.progressBar1);
             this.groupBox4.Controls.Add(this.button1);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Controls.Add(this.button2);
             this.groupBox4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox4.Location = new System.Drawing.Point(330, 12);
             this.groupBox4.Name = "groupBox4";
@@ -491,9 +489,17 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Puerto Rasberry";
             // 
+            // textBoxPuerto
+            // 
+            this.textBoxPuerto.Location = new System.Drawing.Point(209, 23);
+            this.textBoxPuerto.Name = "textBoxPuerto";
+            this.textBoxPuerto.Size = new System.Drawing.Size(48, 20);
+            this.textBoxPuerto.TabIndex = 9;
+            this.textBoxPuerto.Text = "40001";
+            // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(240, 21);
+            this.progressBar1.Location = new System.Drawing.Point(268, 24);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(18, 20);
             this.progressBar1.TabIndex = 7;
@@ -502,7 +508,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(122, 47);
+            this.button1.Location = new System.Drawing.Point(137, 54);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
@@ -522,22 +528,11 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(7, 47);
+            this.label5.Location = new System.Drawing.Point(152, 23);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 21);
             this.label5.TabIndex = 3;
             this.label5.Text = "Puerto";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(203, 47);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Refrescar";
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // groupBox5
             // 
@@ -552,52 +547,52 @@
             // 
             // chart1
             // 
-            chartArea1.AxisX.Crossing = -1.7976931348623157E+308D;
-            chartArea1.AxisX.IsLabelAutoFit = false;
-            chartArea1.AxisX.IsMarksNextToAxis = false;
-            chartArea1.AxisX.LabelAutoFitStyle = System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.None;
-            chartArea1.CursorX.AutoScroll = false;
-            chartArea1.InnerPlotPosition.Auto = false;
-            chartArea1.InnerPlotPosition.Height = 85.39228F;
-            chartArea1.InnerPlotPosition.Width = 83.76591F;
-            chartArea1.InnerPlotPosition.X = 13.91905F;
-            chartArea1.InnerPlotPosition.Y = 3.90957F;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea7.AxisX.Crossing = -1.7976931348623157E+308D;
+            chartArea7.AxisX.IsLabelAutoFit = false;
+            chartArea7.AxisX.IsMarksNextToAxis = false;
+            chartArea7.AxisX.LabelAutoFitStyle = System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.None;
+            chartArea7.CursorX.AutoScroll = false;
+            chartArea7.InnerPlotPosition.Auto = false;
+            chartArea7.InnerPlotPosition.Height = 85.39228F;
+            chartArea7.InnerPlotPosition.Width = 83.76591F;
+            chartArea7.InnerPlotPosition.X = 13.91905F;
+            chartArea7.InnerPlotPosition.Y = 3.90957F;
+            chartArea7.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.chart1.Legends.Add(legend7);
             this.chart1.Location = new System.Drawing.Point(6, 16);
             this.chart1.Name = "chart1";
-            series1.BorderWidth = 5;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Color = System.Drawing.Color.Blue;
-            series1.LabelBorderWidth = 5;
-            series1.Legend = "Legend1";
-            series1.Name = "Seccion2";
-            series2.BorderWidth = 5;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Color = System.Drawing.Color.Red;
-            series2.LabelBorderWidth = 5;
-            series2.Legend = "Legend1";
-            series2.Name = "Seccion3";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series3.Color = System.Drawing.Color.Transparent;
-            series3.Legend = "Legend1";
-            series3.Name = "punto";
-            series4.BorderWidth = 5;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series4.Color = System.Drawing.Color.Lime;
-            series4.LabelBorderWidth = 5;
-            series4.Legend = "Legend1";
-            series4.Name = "Seccion1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
-            this.chart1.Series.Add(series3);
-            this.chart1.Series.Add(series4);
+            series25.BorderWidth = 5;
+            series25.ChartArea = "ChartArea1";
+            series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series25.Color = System.Drawing.Color.Blue;
+            series25.LabelBorderWidth = 5;
+            series25.Legend = "Legend1";
+            series25.Name = "Seccion2";
+            series26.BorderWidth = 5;
+            series26.ChartArea = "ChartArea1";
+            series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series26.Color = System.Drawing.Color.Red;
+            series26.LabelBorderWidth = 5;
+            series26.Legend = "Legend1";
+            series26.Name = "Seccion3";
+            series27.ChartArea = "ChartArea1";
+            series27.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series27.Color = System.Drawing.Color.Transparent;
+            series27.Legend = "Legend1";
+            series27.Name = "punto";
+            series28.BorderWidth = 5;
+            series28.ChartArea = "ChartArea1";
+            series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series28.Color = System.Drawing.Color.Lime;
+            series28.LabelBorderWidth = 5;
+            series28.Legend = "Legend1";
+            series28.Name = "Seccion1";
+            this.chart1.Series.Add(series25);
+            this.chart1.Series.Add(series26);
+            this.chart1.Series.Add(series27);
+            this.chart1.Series.Add(series28);
             this.chart1.Size = new System.Drawing.Size(419, 262);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -615,71 +610,68 @@
             // 
             // chart2
             // 
-            chartArea2.AxisX.Crossing = -1.7976931348623157E+308D;
-            chartArea2.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
-            chartArea2.AxisX.IsLabelAutoFit = false;
-            chartArea2.AxisX.IsMarginVisible = false;
-            chartArea2.AxisX.IsStartedFromZero = false;
-            chartArea2.AxisX.LabelAutoFitMaxFontSize = 5;
-            chartArea2.AxisX.LabelAutoFitMinFontSize = 8;
-            chartArea2.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea2.AxisY.Title = "Altura";
-            chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
+            chartArea8.AxisX.Crossing = -1.7976931348623157E+308D;
+            chartArea8.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea8.AxisX.IsLabelAutoFit = false;
+            chartArea8.AxisX.IsMarginVisible = false;
+            chartArea8.AxisX.IsStartedFromZero = false;
+            chartArea8.AxisX.LabelAutoFitMaxFontSize = 5;
+            chartArea8.AxisX.LabelAutoFitMinFontSize = 8;
+            chartArea8.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea8.AxisY.Title = "Altura";
+            chartArea8.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.chart2.Legends.Add(legend8);
             this.chart2.Location = new System.Drawing.Point(0, 19);
             this.chart2.Name = "chart2";
             this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Light;
-            series5.BorderWidth = 5;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Color = System.Drawing.Color.Blue;
-            series5.LabelBorderWidth = 5;
-            series5.Legend = "Legend1";
-            series5.Name = "Seccion2";
-            series6.BorderWidth = 5;
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.Color = System.Drawing.Color.Red;
-            series6.LabelBorderWidth = 5;
-            series6.Legend = "Legend1";
-            series6.Name = "Seccion3";
-            series7.BorderWidth = 5;
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series7.Color = System.Drawing.Color.Lime;
-            series7.LabelBorderWidth = 5;
-            series7.Legend = "Legend1";
-            series7.Name = "Seccion1";
-            series8.BorderWidth = 0;
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series8.Color = System.Drawing.Color.White;
-            series8.LabelForeColor = System.Drawing.Color.BlanchedAlmond;
-            series8.Legend = "Legend1";
-            series8.Name = "punto";
-            this.chart2.Series.Add(series5);
-            this.chart2.Series.Add(series6);
-            this.chart2.Series.Add(series7);
-            this.chart2.Series.Add(series8);
+            series29.BorderWidth = 5;
+            series29.ChartArea = "ChartArea1";
+            series29.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series29.Color = System.Drawing.Color.Blue;
+            series29.LabelBorderWidth = 5;
+            series29.Legend = "Legend1";
+            series29.Name = "Seccion2";
+            series30.BorderWidth = 5;
+            series30.ChartArea = "ChartArea1";
+            series30.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series30.Color = System.Drawing.Color.Red;
+            series30.LabelBorderWidth = 5;
+            series30.Legend = "Legend1";
+            series30.Name = "Seccion3";
+            series31.BorderWidth = 5;
+            series31.ChartArea = "ChartArea1";
+            series31.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series31.Color = System.Drawing.Color.Lime;
+            series31.LabelBorderWidth = 5;
+            series31.Legend = "Legend1";
+            series31.Name = "Seccion1";
+            series32.BorderWidth = 0;
+            series32.ChartArea = "ChartArea1";
+            series32.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series32.Color = System.Drawing.Color.White;
+            series32.LabelForeColor = System.Drawing.Color.BlanchedAlmond;
+            series32.Legend = "Legend1";
+            series32.Name = "punto";
+            this.chart2.Series.Add(series29);
+            this.chart2.Series.Add(series30);
+            this.chart2.Series.Add(series31);
+            this.chart2.Series.Add(series32);
             this.chart2.Size = new System.Drawing.Size(424, 264);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart2";
             // 
-            // textBoxIP
+            // comboIP
             // 
-            this.textBoxIP.Location = new System.Drawing.Point(44, 19);
-            this.textBoxIP.Name = "textBoxIP";
-            this.textBoxIP.Size = new System.Drawing.Size(190, 20);
-            this.textBoxIP.TabIndex = 8;
-            // 
-            // textBoxPuerto
-            // 
-            this.textBoxPuerto.Location = new System.Drawing.Point(64, 49);
-            this.textBoxPuerto.Name = "textBoxPuerto";
-            this.textBoxPuerto.Size = new System.Drawing.Size(48, 20);
-            this.textBoxPuerto.TabIndex = 9;
+            this.comboIP.FormattingEnabled = true;
+            this.comboIP.Items.AddRange(new object[] {
+            "192.168.1.195",
+            "192.168.0.16"});
+            this.comboIP.Location = new System.Drawing.Point(34, 21);
+            this.comboIP.Name = "comboIP";
+            this.comboIP.Size = new System.Drawing.Size(100, 21);
+            this.comboIP.TabIndex = 10;
             // 
             // Form1
             // 
@@ -745,7 +737,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.GroupBox groupBox6;
@@ -755,7 +746,7 @@
         private CircularProgressBar.CircularProgressBar Pot3;
         private CircularProgressBar.CircularProgressBar Pot2;
         private System.Windows.Forms.TextBox textBoxPuerto;
-        private System.Windows.Forms.TextBox textBoxIP;
+        private System.Windows.Forms.ComboBox comboIP;
     }
 }
 
