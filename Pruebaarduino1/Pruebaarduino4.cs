@@ -188,14 +188,13 @@ namespace Pruebaarduino1
             {
                 string datoarduino2= serialPort1.ReadLine();
 
-                datoarduino = datoarduino2;
                 //int valor = Convert.ToInt32(datoarduino);
-                int position = datoarduino.IndexOf("P1");
-                int position2 = datoarduino.IndexOf("#");
-                int position3 = datoarduino.IndexOf("?");
-                int position4 = datoarduino.IndexOf("=");
-                int position5= datoarduino.IndexOf("$");
-                int position6= datoarduino.IndexOf("&");
+                int position = datoarduino2.IndexOf("P1");
+                int position2 = datoarduino2.IndexOf("#");
+                int position3 = datoarduino2.IndexOf("?");
+                int position4 = datoarduino2.IndexOf("=");
+                int position5= datoarduino2.IndexOf("$");
+                int position6= datoarduino2.IndexOf("&");
 
                 textBox1.Invoke((MethodInvoker)(() =>
                 {
