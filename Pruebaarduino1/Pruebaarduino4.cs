@@ -228,16 +228,16 @@ namespace Pruebaarduino1
                 if (ang1.Length > 0)
                 {
                     textBoxG1.Invoke((MethodInvoker)(() =>
-                {
-                            textBoxG1.Text = ang1;
-                            Pot1.Invoke((MethodInvoker)(() =>
-                            {
-                                int eje1 = Convert.ToInt32(ang1);
-                                Pot1.Value = 360 - eje1;
-                                //Pot1.Text = textBoxG1.Text;    //Me devuelve el valor obtenido del arduino
-                                Pot1.Text = Convert.ToString(eje1 - 175);
+                    {
+                        int eje1 = Convert.ToInt32(ang1) - 175;
+                        textBoxG1.Text = Convert.ToString(eje1);
+                        Pot1.Invoke((MethodInvoker)(() =>
+                        {
+                            Pot1.Value = 360 - eje1 - 175;
+                            //Pot2.Text = textBoxG2.Text; //Me devuelve el valor obtenido del arduino
+                            Pot1.Text = Convert.ToString(eje1);
 
-                            }));
+                        }));
                 }));
                 }
 
@@ -245,14 +245,16 @@ namespace Pruebaarduino1
                 {
                     textBoxG2.Invoke((MethodInvoker)(() =>
                     {
-                            textBoxG2.Text = ang2;
-                            Pot2.Invoke((MethodInvoker)(() =>
-                            {
-                                int eje2 = Convert.ToInt32(ang2);
-                                Pot2.Value = 360 - eje2;
-                                //Pot2.Text = textBoxG2.Text; //Me devuelve el valor obtenido del arduino
-                                Pot2.Text = Convert.ToString(eje2 - 109);
-                            }));
+
+                        int eje2 = Convert.ToInt32(ang2) - 109;
+                        textBoxG2.Text = Convert.ToString(eje2);
+                        Pot2.Invoke((MethodInvoker)(() =>
+                        {
+                            Pot2.Value = 360 - eje2 - 109;
+                            //Pot2.Text = textBoxG2.Text; //Me devuelve el valor obtenido del arduino
+                            Pot2.Text = Convert.ToString(eje2);
+
+                        }));
                     }));
                 }
 
@@ -387,5 +389,6 @@ namespace Pruebaarduino1
 
             
         }
+
     }
 }
