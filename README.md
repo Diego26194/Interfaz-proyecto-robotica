@@ -1,2 +1,3 @@
-# Interfaz-proyecto-robotica
+# Interfaz-proyecto-robotica programada en C#
 interfaz para proyecto de robótica UNSL FICA, control de brazo robótico a distancia
+Es una prueba de interfaz grafica,por eso tiene elementos extras impracticos, que resibe y muestra en pantalla los datos del angulo de giro de 3 potenciometros(ejes de cada articulacion) y las coordenadas cartesianas que tendria el robot para luego mostrarlos con 2 graficos en 2D en 2 planos diferentes,estos tomadas de un arduino que se conecta a una copia a escala del robot original, tambien permite enviar estos por wifi para que el robot origina se mueva a la posicion deseada,el cual es manejado con una raspberry pi
